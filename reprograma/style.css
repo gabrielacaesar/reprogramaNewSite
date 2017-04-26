@@ -1,0 +1,139 @@
+
+
+body {
+	width: 1280px;
+	font-family: helvetica;
+}
+
+
+/* aqui começa a estilização do nosso MENUhorizontal */
+
+#cabecalho {
+	display: flex;
+	justify-content: space-between;
+}
+
+#cabecalho .linha {
+	list-style-type: none;
+	display: flex;
+}
+
+#cabecalho a {
+	text-decoration: none;
+}
+
+/* aqui termina a estilização do nosso MENUhorizontal */
+
+
+/* aqui começa a estilização da nossa NAVEGACAOprimaria */
+
+#navegacaoPrimaria {
+	width: 90%;
+}
+
+#navegacaoPrimaria a {
+	padding: 15px;
+	color: black;
+}
+
+/* aqui termina a estilização da nossa NAVEGACAOprimaria */
+
+
+/* aqui começa a estilização da nossa NAVEGACAOMidiasSociais */
+
+#navegacaoMidiasSociais {
+	display: flex;
+	width: 10%;
+}
+
+#navegacaoMidiasSociais .fa {
+	width: 50px;
+	height: auto;
+}
+
+
+/* aqui termina a estilização da nossa NAVEGACAOMidiasSociais */
+
+
+/* aqui começa o CSS do nosso BANNER */
+
+#banner {
+	display: flex;
+	justify-content: center;
+}
+
+
+/* aqui termina a estilização do nosso BANNER */
+
+/* aqui começa o CSS da nossa class CONTAINER */
+
+.container {
+
+}
+
+
+
+
+
+/* aqui termina a estilização do nosso CONTAINER */
+
+
+/* aqui começa o CSS do nosso id SLOGAN */
+
+#slogan {
+
+}
+
+
+
+
+/* aqui termina a estilização do nosso SLOGAN */
+
+
+/* aqui começa o CSS quanto à main chamada VALORES */
+
+#valores {
+	width: 1140px;
+}
+
+#tresRetangulos {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.card.primeiro {
+	width: 30%;
+}
+
+.card.segundo {
+	width: 30%;
+}
+
+.card.terceiro {
+	width: 30%;
+}
+
+.card img {
+	width: 40px;
+	height: 40px;
+}
+
+.botoes.linha button {
+	width: 40px;
+	height: 40px;
+	font-size: 8px;
+	font-family: tahoma;
+}
+
+.botao a:hover {
+	background-color: black;
+}
+
+.fa.fa-heart {
+	font-size: 20px;
+}
+
+
+
+/* aqui termina o CSS quanto à main chamada VALORES */

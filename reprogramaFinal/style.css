@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|PT+Sans|Roboto+Slab');
+
+/*começo de ESTILOS PADRÕES */
+
+
+* { /*esse asterisco refere-se a todo o conteúdo do site,
+então toda a fonte do site será cinza, por exemplo*/
+	color: rgba(29, 28, 28, 0.77);
+	box-sizing: border-box;
+}
+
+body {
+	font-family: helvetica;
+	margin: 0; 
+/*não informar aqui o tamanho em px. no máximo, em % */
+}
+
+.centralizador { /* usamos isso aqui para trazer e posicionar a BANNER */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.container {
+	width: 1140px; /*tamanho dessa classe*/
+	margin: 0 auto; /*alinha no centro*/
+}
+
+.linha {
+	display: flex; /*quem tem a classe linha fica um ao lado do outro*/
+}
+
+	.linha.espacoEntre {
+		width: 80%;
+		justify-content: space-between;
+	}
+
+	.linha.alinharVertical {
+		align-items: center; /*colocou as lis no centro vertical da nav
+		(e não colado ao topo da página)*/
+		}
+
+
+/*first-child é o primeiro filho */
+h1:first-child{
+	margin-top: 0;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+body section,
+body main {
+	padding-top: 20px; /*aqui usamos padding-top e não margin top. 
+padding-top expande a div. margin-top expande o body*/	
+}
+
+
+/*fim de ESTILOS PADRÕES */
+
+
+/* aqui começa a estilização do nosso MENUhorizontal */
+
+#cabecalho {
+	display: flex;
+	justify-content: space-between;
+	background-color: purple;
+	width: 100%; /*aqui não informamos height, mas o filho (#cabecalho .container) sim */
+	position: fixed; /*passa a acompanhar o scroll*/
+	top: 0px;
+	left: 0px;
+}
+
+#cabecalho a {
+	color: white;
+}
+
+#cabecalho .container {
+	height: 40px; /*se fosse "auto" por default, a tendência é que fique
+	no topo, acompanhando o pai. para evitar, usamos 100%. nesta caso,
+	queremos 40px */
+}
+
+.menuHorizontal ul {
+	margin: 0;
+}
+
+/* aqui termina a estilização do nosso MENUhorizontal */
+
+
+/* aqui começa a estilização da nossa NAVEGACAOprimaria */
+
+#navegacaoPrimaria {
+
+}
+
+#navegacaoPrimaria a {
+	padding: 15px;
+}
+
+/* aqui termina a estilização da nossa NAVEGACAOprimaria */
+
+
+/* aqui começa a estilização da nossa NAVEGACAOMidiasSociais */
+
+#navegacaoMidiasSociais {
+	display: flex;
+
+}
+
+#navegacaoMidiasSociais a{
+	padding: 10px;
+}
+
+#navegacaoMidiasSociais .fa {
+	width: 50px;
+	height: auto;
+	color: white;
+}
+
+
+/* aqui termina a estilização da nossa NAVEGACAOMidiasSociais */
+
+
+/* aqui começa o CSS do nosso BANNER */
+#banner .container {
+	height: 100vh; /*refere-se a viewport height */
+}
+
+#banner {
+	background-image: url(icones/banner_background.jpg);
+	background-size: cover; /*preenche todo o espaço disponível*/
+	padding-top: 0px; /*colocamos ZERO px aqui porque não queremos que
+	ele seja afetado por body section/body main padding-top 20px, 
+	informação dada no começo do CSS*/
+}
+
+#slogan *{ /*asterisco é um coringa e daí está chamando os elementos
+	de dentro, que são h1 e h2 */
+	color: white;
+}
+
+#slogan h1 {
+	width: 500px;
+	height: 81px;
+	background: url(icones/logo.png) no-repeat; /*é mais enxugado; em vez de escrever as propriedades
+	para background-image e background-repeat*/
+	overflow: hidden; /*se o texto for para fora da caixa, ele fica escondido*/
+	text-indent: -666px; /*texto do h1 correu para a esquerda e desapareceu da caixa*/
+}
+
+#slogan h2 {
+	text-align: center;
+}
+
+
+/* aqui termina a estilização do nosso BANNER */
+
+/* aqui começa o CSS da nossa xxx */
+
+
+
+
+/* aqui termina a estilização do nosso CARDcontainer */
+
+
+/* aqui começa o CSS do nosso id SLOGAN */
+
+#slogan {
+
+}
+
+
+
+
+/* aqui termina a estilização do nosso SLOGAN */
+
+
+/* aqui começa o CSS quanto à main chamada VALORES */
+
+
+.card {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center; /*centralizamos h3 e p*/
+}
+
+.botao {
+	font-size: 15px;
+	font-weight: 700;
+	padding: 7px 13px;
+	background: white;
+	border: darkgray 1px solid;
+	border-radius: 16%;
+	margin: 10px;
+	cursor: pointer;	
+}
+
+.card img {
+	height: 100px;
+}
+
+.botao .fa {
+	margin-left: 5px;
+}
+
+.botao .fa:only-child { /*se for filho único, margin-left é 0px*/
+	margin-left: 0px;
+}
+
+	.botao.amei {
+		background: purple;
+	}
+
+	.botao.amei span,
+	.botao.amei .fa {
+		opacity: 0.8;
+		color: white;
+	}
+
+	.botao.detalhe {
+		background: orange;
+		opacity: 0.8;
+		color: white;
+	}
+
+
+/* aqui termina o CSS quanto à main chamada VALORES */
+
+/* aqui começa o MENU HAMBURGER */
+
+.botao.menuHamburger {
+	background: none;
+	display: none;
+	
+}
+
+.botao.menuHamburger .fa.fa-bars {
+	color: white;
+}
+
+
+
+
+/* termina o MENU HAMBURGER */
+
+
+/* TABLET */
+
+@media (max-width: 1140px) {
+	
+.container {
+	width: 700px;
+	}
+
+.navegacaoPrimaria {
+	display: none;
+	}
+
+.botao.menuHamburger {
+	display: block;
+	}
+
+.cardcontainer {
+	flex-wrap: wrap;
+	}
+
+.card{
+	width: 50%;
+	}
+
+#navegacaoPrimaria {
+	display: none;
+	}
+
+
+}
+
+/* fim do TABLET */
+
+
+/*SMARTPHONE*/
+
+@media (max-width: 420px) {
+
+.container {
+	width: 100%;
+
+	}
+
+#slogan h1 {
+	width: 300px;
+	background-size: contain;
+	margin: 0 auto;
+	}
+
+.card{
+	width: 100%;
+	}
+
+}
+
+
+
+/*fim do SMARTPHONE */

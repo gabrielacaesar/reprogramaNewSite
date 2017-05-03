@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Reprograma - Reprogramando o mundo</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link rel="stylesheet" href="style.css">
+	
+	</head>
+	<body>
+
+<!-- aqui começa o nosso menuHorizontal -->
+
+	<header id="cabecalho">
+	<div class="container linha espacoEntre alinharVertical">
+
+<!-- aqui vamos inserir nosso MENU HAMBURGUER -->
+
+		<button class="botao menuHamburguer">
+			<i class="fa fa-bars"></i>
+		</button>
+
+<!-- termina MENU HAMBURGUER -->
+
+		<nav class="menuHorizontal" id="navegacaoPrimaria">
+			<ul class="linha">
+				<li><a href="https://www.google.com.br/" target="_blank" alt="item Home do menu">Home</a></li>
+				<li><a href="https://www.google.com.br/" target="_blank" alt="item Contato do menu">Contato</a></li>
+				<li><a href="https://www.google.com.br/" target="_blank" alt="item Quem somos do menu">Quem somos</a></li>
+			</ul>
+		</nav>
+
+		<nav class="menuHorizontal" id="navegacaoMidiasSociais">
+			<ul class="linha">
+				<li><a href="https://www.google.com.br/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+				<li><a href="https://www.google.com.br/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a href="https://www.google.com.br/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+			</ul>
+		</nav>
+	</div>
+	</header>
+
+
+<!-- aqui termina o nosso menuHorizontal -->
+
+
+<!-- aqui começa o nosso slider -->
+
+	<section id="slider">
+		<div class="navegacoes">
+			<nav class="setas">
+				<button class="seta esquerda"><i class="fa fa-chevron-left"></i></button>
+				<button class="seta direita"><i class="fa fa-chevron-right"></i></button>
+				
+				<nav class="bullets menuHorizontal">
+				<ul class="linha">
+					<!--<li> vamos inserir pelo javascript de acordo com o número de fotos
+						<button class="bullet ativo">
+							
+						</button>
+					</li>
+					<li>
+						<button class="bullet ativo">
+							
+						</button>
+					</li>
+					<li>
+						<button class="bullet ativo">
+							
+						</button>
+					</li>
+					<li>
+						<button class="bullet ativo">
+							
+						</button>
+					</li> -->
+				</ul>
+
+				</nav>
+			</nav>		
+		</div>
+		<div class="slideBox">
+			<div class="slide centralizador ativo">
+				<img src="https://images.unsplash.com/photo-1427694012323-fb5e8b0c165b?dpr=1&auto=format&fit=crop&w=1199&h=783&q=80&cs=tinysrgb&crop=&bg=" alt="">
+				<h3>Título</h3>
+				<a class="botao" href="#"></a>
+			</div>
+
+			<div class="slide centralizador">
+				<img src="https://images.unsplash.com/photo-1439886183900-e79ec0057170?dpr=1&auto=format&fit=crop&w=1199&h=736&q=80&cs=tinysrgb&crop=&bg=" alt="">
+				<h3>Título</h3>
+				<a class="botao" href="#"></a>
+			</div>
+
+			<div class="slide centralizador">
+				<img src="https://images.unsplash.com/photo-1469173479606-ada03df615ac?dpr=1&auto=format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=&bg=" alt="">
+				<h3>Título</h3>
+				<a class="botao" href="#"></a>
+			</div>
+
+			<div class="slide centralizador">
+				<img src="https://images.unsplash.com/photo-1472634511615-7ce0fcc2c100?dpr=1&auto=format&fit=crop&w=1199&h=673&q=80&cs=tinysrgb&crop=&bg=" alt="">
+				<h3>Título</h3>
+				<a class="botao" href="#"></a>
+			</div>
+		</div>
+	</section>
+
+<!-- aqui termina o nosso slider -->
+
+<!-- aqui começa a main "valores" -->
+
+<main id="valores">
+	<div class="container">
+
+		<div class="cardcontainer linha">
+			<div class="card primeiro">
+				<img src="icones/foco.svg" alt="">
+				<div class="textos">
+					<h3>Foco</h3>
+					<p>Fugiat repellat voluptates molestias voluptatem exercitationem alias.</p>
+				</div>
+				<div class="botoes linha">
+					<button class="botao detalhe" onclick="window.location.href='https://www.google.com.br/'"><span>detalhe</span></button>
+					<button class="botao amei" onclick="window.location.href='https://www.google.com.br/'"><span>amei!</span><i class="fa fa-heart" aria-hidden="true"></i></button>
+				</div>
+			</div>
+			<div class="card segundo">
+				<img src="icones/forca.svg" alt="">
+				<div class="textos">
+					<h3>Força</h3>
+					<p>Fugiat repellat voluptates molestias voluptatem exercitationem alias.</p>
+				</div>
+				<div class="botoes linha">	
+					<button class="botao detalhe" onclick="window.location.href='https://www.google.com.br/'"><span>detalhe</span></button>
+					<button class="botao amei" onclick="window.location.href='https://www.google.com.br/'"><span>amei!</span><i class="fa fa-heart" aria-hidden="true"></i></button>
+				</div>
+			</div>
+			<div class="card terceiro">
+				<img src="icones/fe.svg" alt="">
+				<div class="textos">
+					<h3>Fé</h3>
+					<p>Fugiat repellat voluptates molestias voluptatem exercitationem alias.</p>
+				</div>
+				<div class="botoes linha">
+					<button class="botao detalhe" onclick="window.location.href='https://www.google.com.br/'"><span>detalhe</span></button></a>
+					<button class="botao amei" onclick="window.location.href='https://www.google.com.br/'"><span>amei!</span><i class="fa fa-heart" aria-hidden="true"></i></button>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</main>
+
+<!-- aqui termina a main "valores" -->
+
+<!-- aqui começa o nosso footer -->
+
+		<footer>
+			
+		</footer>
+
+<!-- aqui termina o nosso footer -->
+
+		<script src="script.js"></script>
+	</body>
+</html>
